@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SVETLENS LTD · Mobile games</title>
+<meta name="description" content="HoneyQuartz Games">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SVETLENS LTD">
+<meta property="og:title" content="SVETLENS LTD · Mobile games">
+<meta property="og:description" content="HoneyQuartz Games">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/manrope.css">
+<style>
+:root {
+  --paper: #fff;
+  --side: hsl(190 0% 96%);
+  --ink: hsl(190 0% 11%);
+  --muted: hsl(190 0% 37%);
+  --line: hsl(190 0% 89%);
+  --accent: hsl(190 72% 30%);
+  --sans: Manrope, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+body { background: var(--paper); color: var(--ink); font: 400 16px/1.6 var(--sans); }
+.shell { display: grid; min-height: 100vh; }
+aside { background: var(--side); padding: 1.6rem clamp(1.25rem, 4vw, 2rem); display: flex; flex-direction: column; gap: 1.4rem; border-bottom: 1px solid var(--line); }
+aside .brand { font-weight: 800; font-size: 1.5rem; line-height: 1.1; letter-spacing: -.03em; text-decoration: none; }
+aside .tag { margin: 0; color: var(--muted); font-size: .95rem; }
+aside nav { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+aside nav a { text-decoration: none; font-weight: 600; font-size: .95rem; color: var(--muted); }
+aside nav a:hover { color: var(--accent); }
+.reach { display: flex; flex-direction: column; gap: .55rem; font-size: .88rem; }
+.reach a { display: inline-flex; align-items: center; gap: .5rem; text-decoration: none; color: var(--muted); word-break: break-all; }
+.reach a:hover { color: var(--accent); }
+.reach svg { width: 15px; height: 15px; flex: 0 0 15px; }
+main { padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 3rem) 3rem; max-width: 62rem; }
+main h2 { margin: 0 0 1.2rem; font-size: 1.7rem; letter-spacing: -.03em; font-weight: 800; }
+.cards { display: grid; gap: 1.4rem; }
+.gcard { border: 1px solid var(--line); border-radius: 22px; padding: 1.4rem; display: grid; gap: 1.2rem; background: var(--paper); }
+.gtop { display: grid; grid-template-columns: 64px 1fr; gap: 1rem; align-items: start; }
+.gtop .icon { width: 64px; height: 64px; border-radius: 15px; background: var(--side); }
+.gtop h3 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; font-weight: 800; }
+.gtop p { margin: .2rem 0 0; color: var(--muted); font-size: .95rem; }
+.strip { display: flex; gap: .6rem; overflow-x: auto; padding-bottom: .3rem; scrollbar-width: thin; }
+.strip img { height: 15rem; width: auto; aspect-ratio: 9 / 16; background: var(--side); border-radius: 12px; flex: 0 0 auto; border: 1px solid var(--line); }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; margin: 0; }
+.btn { display: inline-flex; align-items: center; gap: .45rem; padding: .58rem 1rem; border-radius: 12px; font-size: .88rem; font-weight: 700; line-height: 1; text-decoration: none; border: 1px solid transparent; transition: background-color .12s, border-color .12s, color .12s; }
+.btn svg { width: 14px; height: 14px; }
+.btn-play { background: var(--accent); color: #fff; }
+.btn-play:hover { filter: brightness(1.12); }
+.btn-ghost { border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.blockq { margin-top: 3rem; display: grid; gap: .7rem; }
+.blockq p { margin: 0; color: var(--muted); max-width: 56ch; }
+footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+.none { color: var(--muted); }
+@media (min-width: 900px) {
+  .shell { grid-template-columns: 18.5rem 1fr; }
+  aside { position: sticky; top: 0; height: 100vh; border-bottom: 0; border-right: 1px solid var(--line); padding-top: 2.4rem; justify-content: flex-start; }
+  aside nav { flex-direction: column; gap: .7rem; }
+  .reach { margin-top: auto; }
+}
+
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside>
+    <a class="brand" href="/">SVETLENS LTD</a>
+    <p class="tag">HoneyQuartz Games</p>
+    <nav><a href="#games">Games</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <div class="reach">
+      <a href="mailto:svetlensltd@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 8.2 5.6a1.4 1.4 0 0 0 1.6 0L21 7"/></svg><span>svetlensltd@gmail.com</span></a>
+    </div>
+  </aside>
+  <main>
+    <section id="games">
+      <h2>Games</h2>
+    <div class="cards">
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/aurora-hollow.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Aurora Hollow</h3><p>Pour and sort jewel-bright colours until every tube holds a single shade.</p></div></div>
+        <div class="strip"><img src="/shots/aurora-hollow_1.png" alt="Aurora Hollow screenshot 1" loading="lazy" decoding="async"><img src="/shots/aurora-hollow_2.png" alt="Aurora Hollow screenshot 2" loading="lazy" decoding="async"><img src="/shots/aurora-hollow_3.png" alt="Aurora Hollow screenshot 3" loading="lazy" decoding="async"><img src="/shots/aurora-hollow_4.png" alt="Aurora Hollow screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Halcyon922.AuroraHollow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/aurora-hollow/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/bronze-spire.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Bronze Spire</h3><p>Swap tiles to line up three of a colour, then beat your own record.</p></div></div>
+        <div class="strip"><img src="/shots/bronze-spire_1.png" alt="Bronze Spire screenshot 1" loading="lazy" decoding="async"><img src="/shots/bronze-spire_2.png" alt="Bronze Spire screenshot 2" loading="lazy" decoding="async"><img src="/shots/bronze-spire_3.png" alt="Bronze Spire screenshot 3" loading="lazy" decoding="async"><img src="/shots/bronze-spire_4.png" alt="Bronze Spire screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Vivid558.BronzeSpire"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/bronze-spire/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/cinder-lantern.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Cinder Lantern</h3><p>Bounce, smash every brick and sharpen your focus in warm clay-toned levels.</p></div></div>
+        <div class="strip"><img src="/shots/cinder-lantern_1.png" alt="Cinder Lantern screenshot 1" loading="lazy" decoding="async"><img src="/shots/cinder-lantern_2.png" alt="Cinder Lantern screenshot 2" loading="lazy" decoding="async"><img src="/shots/cinder-lantern_3.png" alt="Cinder Lantern screenshot 3" loading="lazy" decoding="async"><img src="/shots/cinder-lantern_4.png" alt="Cinder Lantern screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Sable055.CinderLantern"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/cinder-lantern/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/ember-dawn.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Ember Dawn</h3><p>Aim, shoot, and pop colorful bubbles across many levels of earthy puzzles.</p></div></div>
+        <div class="strip"><img src="/shots/ember-dawn_1.png" alt="Ember Dawn screenshot 1" loading="lazy" decoding="async"><img src="/shots/ember-dawn_2.png" alt="Ember Dawn screenshot 2" loading="lazy" decoding="async"><img src="/shots/ember-dawn_3.png" alt="Ember Dawn screenshot 3" loading="lazy" decoding="async"><img src="/shots/ember-dawn_4.png" alt="Ember Dawn screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Onyx808.EmberDawn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/ember-dawn/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/stellar-nexus.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Stellar Nexus</h3><p>Tap to drop pastel blocks and stack higher in this calm, cozy tower game.</p></div></div>
+        <div class="strip"><img src="/shots/stellar-nexus_1.png" alt="Stellar Nexus screenshot 1" loading="lazy" decoding="async"><img src="/shots/stellar-nexus_2.png" alt="Stellar Nexus screenshot 2" loading="lazy" decoding="async"><img src="/shots/stellar-nexus_3.png" alt="Stellar Nexus screenshot 3" loading="lazy" decoding="async"><img src="/shots/stellar-nexus_4.png" alt="Stellar Nexus screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Halcyon313.StellarNexus"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/stellar-nexus/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/velvet-quest.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Velvet Quest</h3><p>Swipe to merge dusty pastel tiles in chain reactions on your way to 2048.</p></div></div>
+        <div class="strip"><img src="/shots/velvet-quest_1.png" alt="Velvet Quest screenshot 1" loading="lazy" decoding="async"><img src="/shots/velvet-quest_2.png" alt="Velvet Quest screenshot 2" loading="lazy" decoding="async"><img src="/shots/velvet-quest_3.png" alt="Velvet Quest screenshot 3" loading="lazy" decoding="async"><img src="/shots/velvet-quest_4.png" alt="Velvet Quest screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Zephyr66.VelvetQuest"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/velvet-quest/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/velvet-rush.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Velvet Rush</h3><p>Drag jewel-toned wood blocks to fill and clear rows and columns.</p></div></div>
+        <div class="strip"><img src="/shots/velvet-rush_1.png" alt="Velvet Rush screenshot 1" loading="lazy" decoding="async"><img src="/shots/velvet-rush_2.png" alt="Velvet Rush screenshot 2" loading="lazy" decoding="async"><img src="/shots/velvet-rush_3.png" alt="Velvet Rush screenshot 3" loading="lazy" decoding="async"><img src="/shots/velvet-rush_4.png" alt="Velvet Rush screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Lunar79.VelvetRush"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/velvet-rush/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+      <article class="gcard">
+        <div class="gtop"><img class="icon" src="/icons/violet-lagoon.png" alt="" width="64" height="64" loading="lazy">
+          <div><h3>Violet Lagoon</h3><p>Drag to link matching dots, close loops, and chase a new personal high score.</p></div></div>
+        <div class="strip"><img src="/shots/violet-lagoon_1.png" alt="Violet Lagoon screenshot 1" loading="lazy" decoding="async"><img src="/shots/violet-lagoon_2.png" alt="Violet Lagoon screenshot 2" loading="lazy" decoding="async"><img src="/shots/violet-lagoon_3.png" alt="Violet Lagoon screenshot 3" loading="lazy" decoding="async"><img src="/shots/violet-lagoon_4.png" alt="Violet Lagoon screenshot 4" loading="lazy" decoding="async"></div>
+        <p class="actions"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.Echo88.VioletLagoon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11.14-6.86a1 1 0 0 0 0-1.72L9.5 4.28A1 1 0 0 0 8 5.14Z"/></svg>Google Play</a><a class="btn btn-ghost" href="/violet-lagoon/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.3-7 9.5-4.1-1.2-7-5.2-7-9.5V6l7-3Z"/><path d="M9.5 12.2l1.9 1.9 3.5-3.7"/></svg>Privacy policy</a></p>
+      </article>
+    </div>
+    </section>
+    <section id="about" class="blockq">
+      <h2 style="margin:0">About</h2>
+      <p>Our studio designs satisfying tile-based challenges with clear rules and gentle pacing. We add fresh combinations to keep each stage interesting.</p>
+      <p>The catalogue grows one title at a time. New releases appear on this page as soon as they are live.</p>
+    </section>
+    <section id="contact" class="blockq">
+      <h2 style="margin:0">Contact</h2>
+      <div class="reach" style="font-size:1rem">
+        <a href="mailto:svetlensltd@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 8.2 5.6a1.4 1.4 0 0 0 1.6 0L21 7"/></svg><span>svetlensltd@gmail.com</span></a>
+      </div>
+    </section>
+    <footer>&copy; 2026 SVETLENS LTD &middot; svetlensltd.cfd</footer>
+  </main>
+</div>
+</body>
+</html>
